@@ -775,7 +775,7 @@ PEAD 自被发现以来已有所减弱：
 ### 后续篇章
 
 - [09. 因子与组合策略](09_factor_strategies.md) — 事件因子的系统化应用
-- [13. 市场微观结构](13_market_microstructure.md) — 事件交易的执行
+- [14. 市场微观结构](14_market_microstructure.md) — 事件交易的执行
 
 ### 参考文献
 

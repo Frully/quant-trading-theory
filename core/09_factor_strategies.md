@@ -1,7 +1,7 @@
 # 第九章：因子与组合策略
 
 > **核心问题**：因子投资的理论基础是什么？如何将因子理论转化为投资策略？
-> **前置阅读**：[12. 因子定价](12_factor_pricing.md)、[05. 趋势与动量策略](05_trend_and_momentum.md)、[06. 价值与反转策略](06_value_and_reversal.md)
+> **前置阅读**：[13. 因子定价](13_factor_pricing.md)、[05. 趋势与动量策略](05_trend_and_momentum.md)、[06. 价值与反转策略](06_value_and_reversal.md)
 
 ---
 
@@ -756,8 +756,8 @@ Smart Beta 与因子择时
 
 - [05. 趋势与动量策略](05_trend_and_momentum.md)：动量因子详解
 - [06. 价值与反转策略](06_value_and_reversal.md)：价值因子详解
-- [12. 因子定价](12_factor_pricing.md)：因子定价理论基础
-- [15. 投资组合理论](15_portfolio_theory.md)：组合优化方法
+- [13. 因子定价](13_factor_pricing.md)：因子定价理论基础
+- [16. 投资组合理论](16_portfolio_theory.md)：组合优化方法
 
 ---
 
@@ -766,7 +766,7 @@ Smart Beta 与因子择时
 ### 后续篇章
 
 - [10. 波动率策略](10_volatility_strategies.md) — 波动率作为资产类别
-- [15. 投资组合理论](15_portfolio_theory.md) — 组合优化方法
+- [16. 投资组合理论](16_portfolio_theory.md) — 组合优化方法
 
 ### 参考文献
 
