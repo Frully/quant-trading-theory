@@ -1,8 +1,19 @@
 # 量化交易的理论基础 (Foundational Theories of Quantitative Trading)
 
-> **定位**：本文是**理论速查手册**，每个概念用 5-10 行简明介绍。如需深入理解，请阅读对应的核心问题文章（01-07）。
+> **定位**：本文是**理论速查手册**，每个概念用 5-10 行简明介绍。如需深入理解，请阅读对应的核心章节（00-19）。
 
 量化交易的理论基石建立在对市场有效性的探讨之上。理解这些理论有助于厘清量化交易的获利逻辑、局限性以及适用场景。
+
+**章节对照**：
+- 市场效率：[第一章](01_efficient_market_hypothesis.md)
+- 行为金融：[第二章](02_behavioral_finance.md)
+- 限制套利：[第三章](03_limits_to_arbitrage.md)
+- 信息与价格：[第四章](04_information_and_price.md)
+- 策略理论：[第五章](05_trend_and_momentum.md) - [第十一章](11_machine_learning.md)
+- 定价理论：[第十二章](12_factor_pricing.md) - [第十四章](14_derivatives_pricing.md)
+- 组合与风险：[第十五章](15_portfolio_theory.md) - [第十六章](16_risk_theory.md)
+- 执行：[第十七章](17_trade_execution.md)
+- 市场生态：[第十八章](18_market_ecosystem.md) - [第十九章](19_market_structure_evolution.md)
 
 ---
 
