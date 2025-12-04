@@ -28,7 +28,7 @@
 
 | # | 问题 | 核心理论 | 状态 |
 |---|------|---------|------|
-| 1 | [为什么存在超额收益？](01_why_alpha_exists.md) | EMH, AMH, 行为金融, 限制套利 | 待写 |
+| 1 | [为什么存在超额收益？](01_why_alpha_exists.md) | EMH, AMH, 行为金融, 限制套利 | ✓ 完成 |
 | 2 | [如何发现 Alpha？](02_how_to_find_alpha.md) | 因子模型, 统计检验, 机器学习 | 待写 |
 | 3 | [如何避免伪 Alpha？](03_how_to_avoid_false_alpha.md) | 过拟合, 数据窥探, 因果推断 | 待写 |
 | 4 | [如何确定仓位？](04_how_to_size_positions.md) | MPT, Kelly, 风险预算 | 待写 |
@@ -64,7 +64,7 @@
 ## 研究进度
 
 - [x] 理论框架 (foundational_theories.md)
-- [ ] Q1: 为什么存在超额收益？
+- [x] Q1: 为什么存在超额收益？
 - [ ] Q2: 如何发现 Alpha？
 - [ ] Q3: 如何避免伪 Alpha？
 - [ ] Q4: 如何确定仓位？
