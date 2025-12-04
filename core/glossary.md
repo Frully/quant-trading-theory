@@ -100,7 +100,7 @@ BSM模型。期权定价的经典模型，假设标的资产服从几何布朗�
 
 ### Factor Model
 因子模型。将资产收益分解为多个因子的线性组合。常见因子：市场、规模、价值、动量、质量。
-- 详见：[第九章：因子与组合策略](09_factor_strategies.md)、[第十二章：因子定价](12_factor_pricing.md)
+- 详见：[第九章：因子与组合策略](09_factor_strategies.md)、[第十三章：因子定价](13_factor_pricing.md)
 
 ### Fat Tails
 肥尾分布。极端事件发生概率远高于正态分布预测。
