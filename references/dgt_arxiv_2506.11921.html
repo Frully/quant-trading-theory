@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance</title>
+<!--Generated on Wed Dec  3 12:29:26 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="/static/browse/0.3.4/css/arxiv-html-papers-20250916.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"></script>
+<script src="/static/browse/0.3.4/js/addons_new.js"></script>
+<script src="/static/browse/0.3.4/js/feedbackOverlay.js"></script>
+<base href="/html/2506.11921v1/"/></head>
+<body>
+<nav class="ltx_page_navbar">
+<nav class="ltx_TOC">
+<ol class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_section">
+<a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S1" title="In Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection">
+<a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S1.SS1" title="In 1 Introduction ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Traditional Grid Trading Strategy</span></a>
+<ol class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S1.SS1.SSS1" title="In 1.1 Traditional Grid Trading Strategy ‣ 1 Introduction ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1.1 </span>Initial Setup</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S1.SS1.SSS2" title="In 1.1 Traditional Grid Trading Strategy ‣ 1 Introduction ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1.2 </span>Algorithm</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S1.SS1.SSS3" title="In 1.1 Traditional Grid Trading Strategy ‣ 1 Introduction ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1.3 </span>Termination</span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S1.SS2" title="In 1 Introduction ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Data Resources</span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S2" title="In Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Observations</span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S2.SS1" title="In 2 Observations ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>Claim 1: Infinite Resources</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection">
+<a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S2.SS2" title="In 2 Observations ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Claim 2: Zero Expected Value</span></a>
+<ol class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S2.SS2.SSS1" title="In 2.2 Claim 2: Zero Expected Value ‣ 2 Observations ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2.1 </span>Required Number of Arbitrage Times</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S2.SS2.SSS2" title="In 2.2 Claim 2: Zero Expected Value ‣ 2 Observations ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2.2 </span>Expected Value of Grid Trading</span></a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S3" title="In Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Dynamic Grid-Based Trading Strategy</span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S3.SS1" title="In 3 Dynamic Grid-Based Trading Strategy ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>DGT Algorithm</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S3.SS2" title="In 3 Dynamic Grid-Based Trading Strategy ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Backtesting Results</span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S4" title="In Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Discussion</span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S4.SS1" title="In 4 Discussion ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1 </span>Comparison with <span class="ltx_text ltx_font_italic">Buy-and-Hold</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S4.SS2" title="In 4 Discussion ‣ Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.2 </span>Comparison with <span class="ltx_text ltx_font_italic">Grid Trading Strategy</span></span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#S5" title="In Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Conclusions and Future Work</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a class="ltx_ref" href="https://arxiv.org/html/2506.11921v1#A1" title="In Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Code Availability</span></a></li>
+</ol></nav>
+</nav>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<h1 class="ltx_title ltx_title_document">Dynamic Grid Trading Strategy: From Zero Expectation to Market
+Outperformance</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Kai-Yuan Chen 
+<br class="ltx_break"/>Department of Computer Science 
+<br class="ltx_break"/>&amp; Information Engineering, 
+<br class="ltx_break"/>National Taiwan University
+<br class="ltx_break"/><span class="ltx_text ltx_font_typewriter">a1041228@gmail.com</span>
+<br class="ltx_break"/>&amp;Kai-Hsin Chen<span class="ltx_note ltx_role_footnotemark" id="footnotex2"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup><span class="ltx_note_type">footnotemark: </span><span class="ltx_tag ltx_tag_note">1</span></span></span></span>
+<br class="ltx_break"/>Department of Physics, 
+<br class="ltx_break"/>National Taiwan University
+<br class="ltx_break"/><span class="ltx_text ltx_font_typewriter">colachen1@gmail.com</span>
+<br class="ltx_break"/>&amp;Jyh-Shing Roger Jang 
+<br class="ltx_break"/>Department of Computer Science 
+<br class="ltx_break"/>&amp; Information Engineering, 
+<br class="ltx_break"/>National Taiwan University
+<br class="ltx_break"/><span class="ltx_text ltx_font_typewriter">jang@csie.ntu.edu.tw</span>
+<br class="ltx_break"/>
+</span><span class="ltx_author_notes">Equal contribution.Corresponding author: jang@csie.ntu.edu.tw</span></span>
+</div>
+<div class="ltx_abstract">
+<h6 class="ltx_title ltx_title_abstract">Abstract</h6>
+<p class="ltx_p">In this paper, we propose a profitable strategy for the cryptocurrency market through grid trading. We start by analyzing the expected value of the traditional grid trading strategy. Based on our findings, we introduce an improved approach, the <span class="ltx_text ltx_font_italic">Dynamic Grid-based Trading (DGT)</span> strategy, which demonstrates superior performance compared to conventional methods.</p>
+</div>
+<div class="ltx_para ltx_noindent" id="p1">
+<div class="ltx_block ltx_align_bottom">
+<p class="ltx_p ltx_align_center"><span class="ltx_text ltx_font_bold">Dynamic Grid Trading Strategy: From Zero Expectation to Market
+Outperformance</span></p>
+<p class="ltx_p ltx_align_center" style="width:345.0pt;"><span class="ltx_text ltx_inline-block" style="width:0.0pt;">
+<span class="ltx_tabular ltx_align_top">
+<span class="ltx_tbody">
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center"><span class="ltx_text ltx_font_bold">Kai-Yuan Chen<span class="ltx_note ltx_role_thanks"><sup class="ltx_note_mark">†</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">†</sup><span class="ltx_note_type">thanks: </span>Equal contribution.</span></span></span></span></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center">Department of Computer Science</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center">&amp; Information Engineering,</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center">National Taiwan University</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center"><span class="ltx_text ltx_font_typewriter">a1041228@gmail.com</span></span></span>
+</span>
+</span></span>        <span class="ltx_text ltx_inline-block" style="width:0.0pt;">
+<span class="ltx_tabular ltx_align_top">
+<span class="ltx_tbody">
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center"><span class="ltx_text ltx_font_bold">Kai-Hsin Chen<span class="ltx_note ltx_role_footnotemark" id="footnotex1"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup><span class="ltx_note_type">footnotemark: </span><span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_medium">1</span></span></span></span></span></span></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center">Department of Physics,</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center">National Taiwan University</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center"><span class="ltx_text ltx_font_typewriter">colachen1@gmail.com</span></span></span>
+</span>
+</span></span>        <span class="ltx_text ltx_inline-block" style="width:0.0pt;">
+<span class="ltx_tabular ltx_align_top">
+<span class="ltx_tbody">
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center"><span class="ltx_text ltx_font_bold">Jyh-Shing Roger Jang<span class="ltx_note ltx_role_thanks"><sup class="ltx_note_mark">†</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">†</sup><span class="ltx_note_type">thanks: </span>Corresponding author: jang@csie.ntu.edu.tw</span></span></span></span></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center">Department of Computer Science</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center">&amp; Information Engineering,</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center">National Taiwan University</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_center"><span class="ltx_text ltx_font_typewriter">jang@csie.ntu.edu.tw</span></span></span>
+</span>
+</span></span></p>
+</div>
+</div>
+<section class="ltx_section" id="S1">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
+<div class="ltx_para" id="S1.p1">
+<p class="ltx_p">Cryptocurrencies are digital assets secured by cryptography, operating on decentralized blockchain networks. In recent years, the use of cryptocurrencies for transactions has significantly increased. As of <span class="ltx_text ltx_font_italic">August 17, 2024</span>, the daily trading volume of Bitcoin had reached approximately <span class="ltx_text ltx_font_italic">$37 billion</span>. Furthermore, compared to traditional stock markets, cryptocurrencies exhibit substantial volatility.</p>
+</div>
+<div class="ltx_para" id="S1.p2">
+<p class="ltx_p">To capitalize on this volatility, many traders employ grid trading strategies in their transactions. We began by proposing mathematical hypotheses and conducting proofs, which informed the design of our strategy based on the <span class="ltx_text ltx_font_italic">traditional grid trading model</span>. Following this, we developed a backtesting system to assess its effectiveness through programming.</p>
+</div>
+<section class="ltx_subsection" id="S1.SS1">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1 </span>Traditional Grid Trading Strategy</h3>
+<div class="ltx_para" id="S1.SS1.p1">
+<p class="ltx_p">We will provide a brief introduction to the <span class="ltx_text ltx_font_italic">spot grid trading strategy</span> applied in our research. The grid type used in this study is the <span class="ltx_text ltx_font_italic">geometric grid</span>, which places orders at price intervals that adjust proportionally. This method enables a more efficient capture of market movements across different levels of volatility.</p>
+</div>
+<section class="ltx_subsubsection" id="S1.SS1.SSS1">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.1.1 </span>Initial Setup</h4>
+<div class="ltx_para" id="S1.SS1.SSS1.p1">
+<p class="ltx_p">Assume there are <math alttext="n" class="ltx_Math" display="inline" id="S1.SS1.SSS1.p1.m1" intent=":literal"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> grids, resulting in <math alttext="n+1" class="ltx_Math" display="inline" id="S1.SS1.SSS1.p1.m2" intent=":literal"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math> grid levels. Given that the grid intervals have equal ratios, let the grid size be <math alttext="k" class="ltx_Math" display="inline" id="S1.SS1.SSS1.p1.m3" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>. The current grid level is represented in black, while the other grid levels are shown in gray (as <span class="ltx_text ltx_font_italic">Figure 1</span>). Starting the grid at price <math alttext="P" class="ltx_Math" display="inline" id="S1.SS1.SSS1.p1.m4" intent=":literal"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>, if there are <math alttext="m" class="ltx_Math" display="inline" id="S1.SS1.SSS1.p1.m5" intent=":literal"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> gray grid levels above and <math alttext="n-m" class="ltx_Math" display="inline" id="S1.SS1.SSS1.p1.m6" intent=":literal"><semantics><mrow><mi>n</mi><mo>−</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n-m</annotation></semantics></math> gray grid levels below the current price, the corresponding grid levels are outlined in <span class="ltx_text ltx_font_italic">Table 1</span> above.</p>
+</div>
+<figure class="ltx_table" id="S1.T1">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_th_row ltx_border_t"><span class="ltx_text ltx_font_bold">Grid Levels</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">Prices</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_t"><code class="ltx_verbatim ltx_font_typewriter">Top</code></th>
+<td class="ltx_td ltx_align_center ltx_border_t"><math alttext="P*(1+k)^{m}" class="ltx_Math" display="inline" id="S1.T1.m1" intent=":literal"><semantics><mrow><mi>P</mi><mo lspace="0.222em" rspace="0.222em">∗</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">P*(1+k)^{m}</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><code class="ltx_verbatim ltx_font_typewriter">...</code></th>
+<td class="ltx_td ltx_align_center">…</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><code class="ltx_verbatim ltx_font_typewriter">Above</code></th>
+<td class="ltx_td ltx_align_center"><math alttext="P*(1+k)" class="ltx_Math" display="inline" id="S1.T1.m2" intent=":literal"><semantics><mrow><mi>P</mi><mo lspace="0.222em" rspace="0.222em">∗</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P*(1+k)</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><code class="ltx_verbatim ltx_font_typewriter">Reference</code></th>
+<td class="ltx_td ltx_align_center"><math alttext="P" class="ltx_Math" display="inline" id="S1.T1.m3" intent=":literal"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><code class="ltx_verbatim ltx_font_typewriter">Below</code></th>
+<td class="ltx_td ltx_align_center"><math alttext="P*(1+k)^{-1}" class="ltx_Math" display="inline" id="S1.T1.m4" intent=":literal"><semantics><mrow><mi>P</mi><mo lspace="0.222em" rspace="0.222em">∗</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">P*(1+k)^{-1}</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><code class="ltx_verbatim ltx_font_typewriter">...</code></th>
+<td class="ltx_td ltx_align_center">…</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b"><code class="ltx_verbatim ltx_font_typewriter">Bottom</code></th>
+<td class="ltx_td ltx_align_center ltx_border_b"><math alttext="P*(1+k)^{-(n-m)}" class="ltx_Math" display="inline" id="S1.T1.m5" intent=":literal"><semantics><mrow><mi>P</mi><mo lspace="0.222em" rspace="0.222em">∗</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow><annotation encoding="application/x-tex">P*(1+k)^{-(n-m)}</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 1: </span>Structure of geometric grid</figcaption>
+</figure>
+<div class="ltx_para" id="S1.SS1.SSS1.p2">
+<p class="ltx_p">If we invest <span class="ltx_text ltx_font_italic">M USDT</span> in total, the instant starting the grid, we spend <math alttext="M*\frac{m}{n}" class="ltx_Math" display="inline" id="S1.SS1.SSS1.p2.m1" intent=":literal"><semantics><mrow><mi>M</mi><mo lspace="0.222em" rspace="0.222em">∗</mo><mfrac><mi>m</mi><mi>n</mi></mfrac></mrow><annotation encoding="application/x-tex">M*\frac{m}{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> USDT</span> to buy cryptocurrency and leave<span class="ltx_text ltx_font_italic"> <math alttext="M*\frac{n-m}{n}" class="ltx_Math" display="inline" id="S1.SS1.SSS1.p2.m2" intent=":literal"><semantics><mrow><mi>M</mi><mo lspace="0.222em" rspace="0.222em">∗</mo><mfrac><mrow><mi>n</mi><mo>−</mo><mi>m</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding="application/x-tex">M*\frac{n-m}{n}</annotation></semantics></math></span> as <span class="ltx_text ltx_font_italic">USDT</span>.</p>
+</div>
+</section>
+<section class="ltx_subsubsection" id="S1.SS1.SSS2">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.1.2 </span>Algorithm</h4>
+<div class="ltx_para" id="S1.SS1.SSS2.p1">
+<p class="ltx_p">After initiating the grid strategy, a transaction is triggered only when the price crosses a gray grid level. If the price rises and crosses the <math alttext="G_{i}^{th}" class="ltx_Math" display="inline" id="S1.SS1.SSS2.p1.m1" intent=":literal"><semantics><msubsup><mi>G</mi><mi>i</mi><mrow><mi>t</mi><mo lspace="0em" rspace="0em">​</mo><mi>h</mi></mrow></msubsup><annotation encoding="application/x-tex">G_{i}^{th}</annotation></semantics></math> gray grid level, counted from the upper limit, we will sell <math alttext="\frac{1}{G_{i}}" class="ltx_Math" display="inline" id="S1.SS1.SSS2.p1.m2" intent=":literal"><semantics><mfrac><mn>1</mn><msub><mi>G</mi><mi>i</mi></msub></mfrac><annotation encoding="application/x-tex">\frac{1}{G_{i}}</annotation></semantics></math> of the cryptocurrency we currently hold. The original black grid level is then marked gray, and the crossed gray level is marked black. Conversely, if the price falls and crosses the <math alttext="G_{j}^{th}" class="ltx_Math" display="inline" id="S1.SS1.SSS2.p1.m3" intent=":literal"><semantics><msubsup><mi>G</mi><mi>j</mi><mrow><mi>t</mi><mo lspace="0em" rspace="0em">​</mo><mi>h</mi></mrow></msubsup><annotation encoding="application/x-tex">G_{j}^{th}</annotation></semantics></math> gray grid level, counted from the lower limit, we will spend <math alttext="\frac{1}{G_{j}}" class="ltx_Math" display="inline" id="S1.SS1.SSS2.p1.m4" intent=":literal"><semantics><mfrac><mn>1</mn><msub><mi>G</mi><mi>j</mi></msub></mfrac><annotation encoding="application/x-tex">\frac{1}{G_{j}}</annotation></semantics></math> of the <span class="ltx_text ltx_font_italic">USDT</span> we hold to purchase cryptocurrency. Similarly, the original black level is marked gray, and the crossed gray level is marked black. This dynamic adjustment of grid levels ensures that the strategy continually adapts to market movements without manual intervention.</p>
+</div>
+</section>
+<section class="ltx_subsubsection" id="S1.SS1.SSS3">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.1.3 </span>Termination</h4>
+<div class="ltx_para" id="S1.SS1.SSS3.p1">
+<p class="ltx_p">Once the price exceeds the upper limit or falls below the lower limit of the grid, the strategy terminates. According to the algorithm’s logic, if the price surpasses the upper limit, we will retain the original <span class="ltx_text ltx_font_italic">USDT</span> invested, the additional <span class="ltx_text ltx_font_italic">USDT</span> earned from grid trading, and no cryptocurrency. Conversely, if the price drops below the lower limit, all the <span class="ltx_text ltx_font_italic">USDT</span> initially invested will be converted into cryptocurrency, and we will still retain the bonus <span class="ltx_text ltx_font_italic">USDT</span> earned from grid trading.</p>
+</div>
+</section>
+</section>
+<section class="ltx_subsection" id="S1.SS2">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.2 </span>Data Resources</h3>
+<div class="ltx_para" id="S1.SS2.p1">
+<p class="ltx_p">We obtained the spot data from <span class="ltx_text ltx_font_italic">Binance</span> using the API: https://api.binance.com/api/v3/klines.
+The data spans from <span class="ltx_text ltx_font_italic">January 2021 to July 2024</span>, with a time interval of <span class="ltx_text ltx_font_italic">1 minute</span>, representing the highest frequency candlestick data available. Given this interval, we assume that the grid strategy executes no more than one transaction per minute. Additionally, we account for transaction fees, applying a fee of <span class="ltx_text ltx_font_italic">0.0008</span>, which corresponds to the <span class="ltx_text ltx_font_italic">Level 1</span> maker fee on OKX.</p>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S2">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Observations</h2>
+<div class="ltx_para" id="S2.p1">
+<p class="ltx_p">In the initial phase of our research, we identified several market patterns and conditions that guided the development of a series of hypotheses and mathematical derivations. These insights inspired the design of a novel grid trading strategy.</p>
+</div>
+<section class="ltx_subsection" id="S2.SS1">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.1 </span>Claim 1: Infinite Resources</h3>
+<div class="ltx_para" id="S2.SS1.p1">
+<p class="ltx_p">The first claim posits that if we have infinite capital and time, the grid trading strategy is inherently profitable. With unlimited funds, the strategy can capitalize on every price movement, as orders are consistently placed at regular intervals above and below the current price. This guarantees continuous buying at low prices and selling at higher ones, profiting from each market fluctuation. Infinite capital allows the strategy to endure even the most challenging market conditions without depleting funds. Similarly, infinite time ensures the ability to wait out any downturns or periods of stagnation, eventually profiting as the price moves. Therefore, with infinite resources, the grid trading strategy would always yield positive returns over time.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="S2.SS2">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2 </span>Claim 2: Zero Expected Value</h3>
+<div class="ltx_para" id="S2.SS2.p1">
+<p class="ltx_p">We assume that the price either increases or decreases by <math alttext="k" class="ltx_Math" display="inline" id="S2.SS2.p1.m1" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> with equal probability (50-50), which is a reasonable hypothesis for a basic investor model. Additionally, we do not consider transaction fees and assume that all cryptocurrency is sold if the price falls below our grid. Under these conditions, we can assert that the expected value of a grid trading strategy with grid size <math alttext="k" class="ltx_Math" display="inline" id="S2.SS2.p1.m2" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> and a finite number of grid levels is zero. The proof is as follows:</p>
+</div>
+<section class="ltx_subsubsection" id="S2.SS2.SSS1">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">2.2.1 </span>Required Number of Arbitrage Times</h4>
+<div class="ltx_para" id="S2.SS2.SSS1.p1">
+<p class="ltx_p">To determine when a grid trading strategy has a positive expected value, consider investing <math alttext="M" class="ltx_Math" display="inline" id="S2.SS2.SSS1.p1.m1" intent=":literal"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> USDT in the grid strategy with <math alttext="n" class="ltx_Math" display="inline" id="S2.SS2.SSS1.p1.m2" intent=":literal"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> grids, resulting in <math alttext="n+1" class="ltx_Math" display="inline" id="S2.SS2.SSS1.p1.m3" intent=":literal"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math> grid levels. Since this is a spot grid trading strategy, if the price rises linearly and surpasses the highest grid level, we can earn <math alttext="P_{u}" class="ltx_Math" display="inline" id="S2.SS2.SSS1.p1.m4" intent=":literal"><semantics><msub><mi>P</mi><mi>u</mi></msub><annotation encoding="application/x-tex">P_{u}</annotation></semantics></math> USDT, where</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.E1">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="P_{u}=\frac{M}{n}\sum_{i=1}^{\frac{n}{2}}i" class="ltx_Math" display="block" id="S2.E1.m1" intent=":literal"><semantics><mrow><msub><mi>P</mi><mi>u</mi></msub><mo>=</mo><mrow><mfrac><mi>M</mi><mi>n</mi></mfrac><mo lspace="0em" rspace="0em">​</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mfrac><mi>n</mi><mn>2</mn></mfrac></munderover><mi>i</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">P_{u}=\frac{M}{n}\sum_{i=1}^{\frac{n}{2}}i</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right" rowspan="1"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Conversely, if the price falls linearly and drops below the lowest grid level, we incur a loss of <math alttext="L_{l}" class="ltx_Math" display="inline" id="S2.SS2.SSS1.p1.m5" intent=":literal"><semantics><msub><mi>L</mi><mi>l</mi></msub><annotation encoding="application/x-tex">L_{l}</annotation></semantics></math> <span class="ltx_text ltx_font_italic">USDT</span>, where</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.E2">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="L_{l}=\frac{M}{n}[\ (\frac{n}{2})^{2}+\sum_{i=1}^{\frac{n}{2}-1}i\ ]" class="ltx_Math" display="block" id="S2.E2.m1" intent=":literal"><semantics><mrow><msub><mi>L</mi><mi>l</mi></msub><mo>=</mo><mrow><mfrac><mi>M</mi><mi>n</mi></mfrac><mo lspace="0em" rspace="0em">​</mo><mrow><mo rspace="0.500em" stretchy="false">[</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac><mo>−</mo><mn>1</mn></mrow></munderover><mi>i</mi></mrow></mrow><mo lspace="0.500em" stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">L_{l}=\frac{M}{n}[\ (\frac{n}{2})^{2}+\sum_{i=1}^{\frac{n}{2}-1}i\ ]</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right" rowspan="1"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus, without accounting for profits from arbitrage, the expected value of the grid strategy is <math alttext="E(G)" class="ltx_Math" display="inline" id="S2.SS2.SSS1.p1.m6" intent=":literal"><semantics><mrow><mi>E</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(G)</annotation></semantics></math> <span class="ltx_text ltx_font_italic">USDT</span>.</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.E3">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E(G)=\frac{1}{2}*(P_{u}-L_{l})=-\frac{M}{n}(\frac{{n}^{2}}{8}-\frac{n}{4})" class="ltx_Math" display="block" id="S2.E3.m1" intent=":literal"><semantics><mrow><mrow><mi>E</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.222em" rspace="0.222em">∗</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>P</mi><mi>u</mi></msub><mo>−</mo><msub><mi>L</mi><mi>l</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mi>M</mi><mi>n</mi></mfrac><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><msup><mi>n</mi><mn>2</mn></msup><mn>8</mn></mfrac><mo>−</mo><mfrac><mi>n</mi><mn>4</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">E(G)=\frac{1}{2}*(P_{u}-L_{l})=-\frac{M}{n}(\frac{{n}^{2}}{8}-\frac{n}{4})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right" rowspan="1"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr></tbody>
+</table>
+</div>
+<figure class="ltx_figure" id="S2.F1"><img alt="Refer to caption" class="ltx_graphics ltx_img_portrait" height="810" id="S2.F1.g1" src="grid.png" width="598"/>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>Grid trading detail information</figcaption>
+</figure>
+<div class="ltx_para" id="S2.SS2.SSS1.p2">
+<p class="ltx_p">In <span class="ltx_text ltx_font_italic">Figure 1</span>, we use <math alttext="n=6" class="ltx_Math" display="inline" id="S2.SS2.SSS1.p2.m1" intent=":literal"><semantics><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">n=6</annotation></semantics></math> for demonstration. Since the grid strategy realizes profits before the price reaches the upper limit and buys more when the price falls, it results in a negative expected value if the price moves linearly. According to the derivation above, if the strategy can achieve more than <math alttext="\frac{n^{2}}{8}-\frac{n}{4}" class="ltx_Math" display="inline" id="S2.SS2.SSS1.p2.m2" intent=":literal"><semantics><mrow><mfrac><msup><mi>n</mi><mn>2</mn></msup><mn>8</mn></mfrac><mo>−</mo><mfrac><mi>n</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{n^{2}}{8}-\frac{n}{4}</annotation></semantics></math> arbitrage opportunities, it will yield a positive arbitrage value.</p>
+</div>
+</section>
+<section class="ltx_subsubsection" id="S2.SS2.SSS2">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">2.2.2 </span>Expected Value of Grid Trading</h4>
+<div class="ltx_para" id="S2.SS2.SSS2.p1">
+<p class="ltx_p">To calculate the expected value of transactions executed by a grid strategy, given that the probability of the price rising or falling by <math alttext="k" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m1" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> is equal, we can reframe the problem as follows: <span class="ltx_text ltx_font_italic">What is the expected number of coin tosses required to achieve either <math alttext="\frac{n}{2}" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m2" intent=":literal"><semantics><mfrac><mi>n</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{n}{2}</annotation></semantics></math> more heads than tails or <math alttext="\frac{n}{2}" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m3" intent=":literal"><semantics><mfrac><mi>n</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{n}{2}</annotation></semantics></math> more tails than heads?</span> To address this, we model the problem using the finite automaton shown in <span class="ltx_text ltx_font_italic">Figure 2</span>. Here, <math alttext="q_{i}" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m4" intent=":literal"><semantics><msub><mi>q</mi><mi>i</mi></msub><annotation encoding="application/x-tex">q_{i}</annotation></semantics></math> represents the state where the difference between the number of heads and tails is <math alttext="i" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m5" intent=":literal"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>, and <math alttext="E_{i}" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m6" intent=":literal"><semantics><msub><mi>E</mi><mi>i</mi></msub><annotation encoding="application/x-tex">E_{i}</annotation></semantics></math> denotes the expected value starting from state <math alttext="q_{i}" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m7" intent=":literal"><semantics><msub><mi>q</mi><mi>i</mi></msub><annotation encoding="application/x-tex">q_{i}</annotation></semantics></math>. The initial state is <math alttext="q_{0}" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m8" intent=":literal"><semantics><msub><mi>q</mi><mn>0</mn></msub><annotation encoding="application/x-tex">q_{0}</annotation></semantics></math>, and the terminal state is <math alttext="q_{\frac{n}{2}}" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m9" intent=":literal"><semantics><msub><mi>q</mi><mfrac><mi>n</mi><mn>2</mn></mfrac></msub><annotation encoding="application/x-tex">q_{\frac{n}{2}}</annotation></semantics></math>. As illustrated in <span class="ltx_text ltx_font_italic">Figure 2</span>, we derive the following relationships: <math alttext="E_{0}=E_{1}+1" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m10" intent=":literal"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">E_{0}=E_{1}+1</annotation></semantics></math>, <math alttext="E_{1}=\frac{1}{2}(E_{0}+1)+\frac{1}{2}(E_{2}+1)" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p1.m11" intent=":literal"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">E_{1}=\frac{1}{2}(E_{0}+1)+\frac{1}{2}(E_{2}+1)</annotation></semantics></math>, and so forth.</p>
+</div>
+<figure class="ltx_figure" id="S2.F2"><img alt="Refer to caption" class="ltx_graphics ltx_img_landscape" height="159" id="S2.F2.g1" src="ss.png" width="598"/>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>Finite automaton of grid trading</figcaption>
+</figure>
+<div class="ltx_para" id="S2.SS2.SSS2.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Proof :</span></p>
+</div>
+<div class="ltx_para" id="S2.SS2.SSS2.p3">
+<p class="ltx_p">The following equations represent the expected value relationships described above:</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.E4">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\begin{split}&amp;E_{1}=E_{0}-1\\
+&amp;E_{2}=2E_{1}-E_{0}-2\\
+&amp;E_{3}=2E_{2}-E_{1}-2\\
+&amp;E_{i}=2E_{i-1}-E_{i-2}-2\\
+\end{split}" class="ltx_Math" display="block" id="S2.E4.m1" intent=":literal"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mn>1</mn></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo lspace="0em" rspace="0em">​</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo>−</mo><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mn>2</mn></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><msub><mi>E</mi><mn>3</mn></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo lspace="0em" rspace="0em">​</mo><msub><mi>E</mi><mn>2</mn></msub></mrow><mo>−</mo><msub><mi>E</mi><mn>1</mn></msub><mo>−</mo><mn>2</mn></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><msub><mi>E</mi><mi>i</mi></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo lspace="0em" rspace="0em">​</mo><msub><mi>E</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo>−</mo><msub><mi>E</mi><mrow><mi>i</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>−</mo><mn>2</mn></mrow></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}&amp;E_{1}=E_{0}-1\\
+&amp;E_{2}=2E_{1}-E_{0}-2\\
+&amp;E_{3}=2E_{2}-E_{1}-2\\
+&amp;E_{i}=2E_{i-1}-E_{i-2}-2\\
+\end{split}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right" rowspan="1"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">From these observations, we conjecture that the recursive relationship for the expected value is <math alttext="E_{m}=E_{0}-m^{2}" class="ltx_Math" display="inline" id="S2.SS2.SSS2.p3.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">E_{m}=E_{0}-m^{2}</annotation></semantics></math>. We will prove this conjecture using mathematical induction.</p>
+</div>
+</section>
+</section>
+<section class="ltx_subsection" id="S2.SSx1">
+<h3 class="ltx_title ltx_font_bold ltx_title_subsection">Base Case :</h3>
+<div class="ltx_para" id="S2.SSx1.p1">
+<p class="ltx_p">If<math alttext="\ m=1,2" class="ltx_Math" display="inline" id="S2.SSx1.p1.m1" intent=":literal"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">\ m=1,2</annotation></semantics></math></p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex1">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E_{1}=E_{0}-1" class="ltx_Math" display="block" id="S2.Ex1.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">E_{1}=E_{0}-1</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex2">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E_{2}=E_{0}-4" class="ltx_Math" display="block" id="S2.Ex2.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>=</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mn>4</mn></mrow></mrow><annotation encoding="application/x-tex">E_{2}=E_{0}-4</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The base case holds for <math alttext="m=1,2" class="ltx_Math" display="inline" id="S2.SSx1.p1.m2" intent=":literal"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">m=1,2</annotation></semantics></math>.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="S2.SSx2">
+<h3 class="ltx_title ltx_title_subsection">Inductive Hypothesis :</h3>
+<div class="ltx_para" id="S2.SSx2.p1">
+<p class="ltx_p">Suppose the result holds for <math alttext="m=k,k+1,k\in\mathbf{N}" class="ltx_Math" display="inline" id="S2.SSx2.p1.m1" intent=":literal"><semantics><mrow><mrow><mi>m</mi><mo>=</mo><mrow><mi>k</mi><mo>,</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mrow></mrow><mo>,</mo><mrow><mi>k</mi><mo>∈</mo><mi>𝐍</mi></mrow></mrow><annotation encoding="application/x-tex">m=k,k+1,k\in\mathbf{N}</annotation></semantics></math></p>
+</div>
+<div class="ltx_para" id="S2.SSx2.p2">
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex3">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E_{k}=E_{0}-k^{2}" class="ltx_Math" display="block" id="S2.Ex3.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>=</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><msup><mi>k</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">E_{k}=E_{0}-k^{2}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_para" id="S2.SSx2.p3">
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex4">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E_{k+1}=E_{0}-(k+1)^{2}" class="ltx_Math" display="block" id="S2.Ex4.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">E_{k+1}=E_{0}-(k+1)^{2}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section class="ltx_subsection" id="S2.SSx3">
+<h3 class="ltx_title ltx_title_subsection">Inductive Step</h3>
+<div class="ltx_para" id="S2.SSx3.p1">
+<p class="ltx_p">For <math alttext="m=k+2" class="ltx_Math" display="inline" id="S2.SSx3.p1.m1" intent=":literal"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mi>k</mi><mo>+</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">m=k+2</annotation></semantics></math></p>
+</div>
+<div class="ltx_para" id="S2.SSx3.p2">
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex5">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E_{k+2}=2E_{k+1}-E_{k}-2" class="ltx_Math" display="block" id="S2.Ex5.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo lspace="0em" rspace="0em">​</mo><msub><mi>E</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>−</mo><msub><mi>E</mi><mi>k</mi></msub><mo>−</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">E_{k+2}=2E_{k+1}-E_{k}-2</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_para" id="S2.SSx3.p3">
+<p class="ltx_p">By the inductive hypothesis, we can replace the sum of the first <math alttext="k" class="ltx_Math" display="inline" id="S2.SSx3.p3.m1" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> integers:</p>
+</div>
+<div class="ltx_para" id="S2.SSx3.p4">
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex6">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E_{k+2}=2[E_{0}-(k+1)^{2}]-(E_{0}-k^{2})-2" class="ltx_Math" display="block" id="S2.Ex6.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><msup><mi>k</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">E_{k+2}=2[E_{0}-(k+1)^{2}]-(E_{0}-k^{2})-2</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_para" id="S2.SSx3.p5">
+<p class="ltx_p">Hence,</p>
+</div>
+<div class="ltx_para" id="S2.SSx3.p6">
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex7">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E_{k+2}=E_{0}-(k+2)^{2}" class="ltx_Math" display="block" id="S2.Ex7.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">E_{k+2}=E_{0}-(k+2)^{2}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section class="ltx_subsection" id="S2.SSx4">
+<h3 class="ltx_title ltx_title_subsection">Conclusion</h3>
+<div class="ltx_para" id="S2.SSx4.p1">
+<p class="ltx_p">Since the base case holds and the inductive step has been proven, by mathematical induction, the statement is true for all <math alttext="n\geq 1" class="ltx_Math" display="inline" id="S2.SSx4.p1.m1" intent=":literal"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para" id="S2.SSx4.p2">
+<p class="ltx_p">By the proof we conducted, if the terminate state is <math alttext="q_{\frac{n}{2}}" class="ltx_Math" display="inline" id="S2.SSx4.p2.m1" intent=":literal"><semantics><msub><mi>q</mi><mfrac><mi>n</mi><mn>2</mn></mfrac></msub><annotation encoding="application/x-tex">q_{\frac{n}{2}}</annotation></semantics></math>, the expected value follows the relationship given below, where <math alttext="E_{\frac{n}{2}}=0" class="ltx_Math" display="inline" id="S2.SSx4.p2.m2" intent=":literal"><semantics><mrow><msub><mi>E</mi><mfrac><mi>n</mi><mn>2</mn></mfrac></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E_{\frac{n}{2}}=0</annotation></semantics></math> :</p>
+</div>
+<div class="ltx_para" id="S2.SSx4.p3">
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex8">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E_{\frac{n}{2}}=E_{0}-(\frac{n}{2})^{2}" class="ltx_Math" display="block" id="S2.Ex8.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mfrac><mi>n</mi><mn>2</mn></mfrac></msub><mo>=</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">E_{\frac{n}{2}}=E_{0}-(\frac{n}{2})^{2}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_para" id="S2.SSx4.p4">
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex9">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E_{0}=\frac{n^{2}}{4}" class="ltx_Math" display="block" id="S2.Ex9.m1" intent=":literal"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mfrac><msup><mi>n</mi><mn>2</mn></msup><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">E_{0}=\frac{n^{2}}{4}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore, the expected value of transactions is <math alttext="\frac{n^{2}}{4}" class="ltx_Math" display="inline" id="S2.SSx4.p4.m1" intent=":literal"><semantics><mfrac><msup><mi>n</mi><mn>2</mn></msup><mn>4</mn></mfrac><annotation encoding="application/x-tex">\frac{n^{2}}{4}</annotation></semantics></math>. Subtracting the transaction costs due to the price difference of <math alttext="\frac{n}{2}" class="ltx_Math" display="inline" id="S2.SSx4.p4.m2" intent=":literal"><semantics><mfrac><mi>n</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{n}{2}</annotation></semantics></math> and then dividing by 2—since each pair of buy and sell transactions constitutes one arbitrage opportunity—yields:</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.E5">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\frac{\frac{n^{2}}{4}-\frac{n}{2}}{2}=\frac{n^{2}}{8}-\frac{n}{4}" class="ltx_Math" display="block" id="S2.E5.m1" intent=":literal"><semantics><mrow><mfrac><mrow><mfrac><msup><mi>n</mi><mn>2</mn></msup><mn>4</mn></mfrac><mo>−</mo><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow><mn>2</mn></mfrac><mo>=</mo><mrow><mfrac><msup><mi>n</mi><mn>2</mn></msup><mn>8</mn></mfrac><mo>−</mo><mfrac><mi>n</mi><mn>4</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">\frac{\frac{n^{2}}{4}-\frac{n}{2}}{2}=\frac{n^{2}}{8}-\frac{n}{4}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right" rowspan="1"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We obtain a result of <math alttext="\frac{n^{2}}{8}-\frac{n}{4}" class="ltx_Math" display="inline" id="S2.SSx4.p4.m3" intent=":literal"><semantics><mrow><mfrac><msup><mi>n</mi><mn>2</mn></msup><mn>8</mn></mfrac><mo>−</mo><mfrac><mi>n</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{n^{2}}{8}-\frac{n}{4}</annotation></semantics></math>, which matches the required number of arbitrage opportunities. Therefore, we can conclude that the expected value of a grid strategy is zero under our assumptions.</p>
+</div>
+<div class="ltx_para" id="S2.SSx4.p5">
+<table class="ltx_equation ltx_eqn_table" id="S2.E6">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="E(grid\ strategy)=0" class="ltx_Math" display="block" id="S2.E6.m1" intent=":literal"><semantics><mrow><mrow><mi>E</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo lspace="0em" rspace="0em">​</mo><mi>r</mi><mo lspace="0em" rspace="0em">​</mo><mi>i</mi><mo lspace="0em" rspace="0em">​</mo><mi>d</mi><mo lspace="0.500em" rspace="0em">​</mo><mi>s</mi><mo lspace="0em" rspace="0em">​</mo><mi>t</mi><mo lspace="0em" rspace="0em">​</mo><mi>r</mi><mo lspace="0em" rspace="0em">​</mo><mi>a</mi><mo lspace="0em" rspace="0em">​</mo><mi>t</mi><mo lspace="0em" rspace="0em">​</mo><mi>e</mi><mo lspace="0em" rspace="0em">​</mo><mi>g</mi><mo lspace="0em" rspace="0em">​</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E(grid\ strategy)=0</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right" rowspan="1"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S3">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Dynamic Grid-Based Trading Strategy</h2>
+<div class="ltx_para" id="S3.p1">
+<p class="ltx_p">Based on our observations, we have found that a grid strategy with infinite capital and time can generate a positive return, while a grid strategy that stops once the price exceeds its boundaries cannot. The key difference is that the former continues to capitalize on arbitrage opportunities, whereas the latter does not. Therefore, even though we lack infinite capital, it is unwise to stop the strategy when the price surpasses our upper or lower limits. This reasoning is straightforward, as the fundamental concept of grid trading is to buy more when the price falls. Selling all cryptocurrency when the price drops below the grid contradicts this core principle. Building on these insights, we developed a novel approach, the <span class="ltx_text ltx_font_bold ltx_font_italic">Dynamic Grid-based Trading (DGT) </span> strategy, which continues to operate regardless of price movements.</p>
+</div>
+<section class="ltx_subsection" id="S3.SS1">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.1 </span>DGT Algorithm</h3>
+<div class="ltx_para" id="S3.SS1.p1">
+<p class="ltx_p">We selected two mainstream cryptocurrencies, <span class="ltx_text ltx_font_italic">Bitcoin</span> and <span class="ltx_text ltx_font_italic">Ethereum</span>, as the assets for backtesting our strategy. As previously mentioned, we utilized <span class="ltx_text ltx_font_italic">1-minute candlestick data</span> for the testing. The algorithm for our <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy is outlined as follows:</p>
+</div>
+<div class="ltx_para" id="S3.SS1.p2">
+<p class="ltx_p">The strategy resets the grid whenever the price breaks above the upper limit or falls below the lower limit, with the current price becoming the new center. If the price breaks above the upper limit, the initial capital is fully recovered and reinvested in the next grid. Conversely, if the price falls below the lower limit, the strategy holds the cryptocurrency, using the arbitrage profits gained as the principal for the new grid.</p>
+</div>
+<figure class="ltx_float ltx_float_algorithm ltx_framed ltx_framed_top" id="alg1">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_float"><span class="ltx_text ltx_font_bold">Algorithm 1</span> </span> DGT Strategy</figcaption>
+<div class="ltx_listing ltx_listing">
+<div class="ltx_listingline" id="alg1.l1">
+<span class="ltx_tag ltx_tag_listingline">1:</span><span class="ltx_text ltx_font_bold">Set Strategy Parameters:</span> <span class="ltx_text ltx_font_italic">grid sizes, levels, transaction fee</span>
+</div>
+<div class="ltx_listingline" id="alg1.l2">
+<span class="ltx_tag ltx_tag_listingline">2:</span><span class="ltx_text ltx_font_bold">Define Grid Calculation:</span> Compute grid levels around start price
+
+</div>
+<div class="ltx_listingline" id="alg1.l3">
+<span class="ltx_tag ltx_tag_listingline">3:</span><span class="ltx_text ltx_font_bold">Prepare Results Storage:</span> Initialize empty list for results
+
+</div>
+<div class="ltx_listingline" id="alg1.l4">
+<span class="ltx_tag ltx_tag_listingline">4:</span><span class="ltx_text ltx_font_bold">for</span> <span class="ltx_text ltx_font_bold">each</span> combination of grid parameters <span class="ltx_text ltx_font_bold">do</span>
+</div>
+<div class="ltx_listingline" id="alg1.l5">
+<span class="ltx_tag ltx_tag_listingline">5:</span>  <span class="ltx_text ltx_font_bold">Initialize variables:</span> <span class="ltx_text ltx_font_italic">wallet, input money, grid count</span> setup
+
+</div>
+<div class="ltx_listingline" id="alg1.l6">
+<span class="ltx_tag ltx_tag_listingline">6:</span>  <span class="ltx_text ltx_font_bold">for</span> <span class="ltx_text ltx_font_bold">each</span> price data point <span class="ltx_text ltx_font_bold">do</span>
+</div>
+<div class="ltx_listingline" id="alg1.l7">
+<span class="ltx_tag ltx_tag_listingline">7:</span>   <span class="ltx_text ltx_font_bold">if</span> price moves up <span class="ltx_text ltx_font_bold">then</span>
+</div>
+<div class="ltx_listingline" id="alg1.l8">
+<span class="ltx_tag ltx_tag_listingline">8:</span>     Execute sell if crossing grid level
+
+</div>
+<div class="ltx_listingline" id="alg1.l9">
+<span class="ltx_tag ltx_tag_listingline">9:</span>   <span class="ltx_text ltx_font_bold">else</span> <span class="ltx_text ltx_font_bold">if</span> price moves down <span class="ltx_text ltx_font_bold">then</span>
+</div>
+<div class="ltx_listingline" id="alg1.l10">
+<span class="ltx_tag ltx_tag_listingline">10:</span>     Execute buy if crossing grid level
+
+</div>
+<div class="ltx_listingline" id="alg1.l11">
+<span class="ltx_tag ltx_tag_listingline">11:</span>   <span class="ltx_text ltx_font_bold">end</span> <span class="ltx_text ltx_font_bold">if</span>
+</div>
+<div class="ltx_listingline" id="alg1.l12">
+<span class="ltx_tag ltx_tag_listingline">12:</span>   <span class="ltx_text ltx_font_bold">if</span> price exceeds grid limitaries <span class="ltx_text ltx_font_bold">then</span>
+</div>
+<div class="ltx_listingline" id="alg1.l13">
+<span class="ltx_tag ltx_tag_listingline">13:</span>     <span class="ltx_text ltx_font_bold">Calculate</span> <span class="ltx_text ltx_font_italic">profit</span>, <span class="ltx_text ltx_font_bold">Reset</span> <span class="ltx_text ltx_font_italic">grid</span>
+</div>
+<div class="ltx_listingline" id="alg1.l14">
+<span class="ltx_tag ltx_tag_listingline">14:</span> <span class="ltx_text ltx_font_bold">Update</span> <span class="ltx_text ltx_font_italic">wallet</span>
+</div>
+<div class="ltx_listingline" id="alg1.l15">
+<span class="ltx_tag ltx_tag_listingline">15:</span>   <span class="ltx_text ltx_font_bold">end</span> <span class="ltx_text ltx_font_bold">if</span>
+</div>
+<div class="ltx_listingline" id="alg1.l16">
+<span class="ltx_tag ltx_tag_listingline">16:</span>  <span class="ltx_text ltx_font_bold">end</span> <span class="ltx_text ltx_font_bold">for</span>
+</div>
+<div class="ltx_listingline" id="alg1.l17">
+<span class="ltx_tag ltx_tag_listingline">17:</span>  Calculate final performance metrics
+
+</div>
+<div class="ltx_listingline" id="alg1.l18">
+<span class="ltx_tag ltx_tag_listingline">18:</span><span class="ltx_text ltx_font_bold">end</span> <span class="ltx_text ltx_font_bold">for</span>
+</div>
+</div>
+</figure>
+<div class="ltx_para" id="S3.SS1.p3">
+<p class="ltx_p">The <span class="ltx_text ltx_font_bold ltx_font_italic">wallet</span> tracks the cumulative profits earned from grid arbitrage, while <span class="ltx_text ltx_font_bold ltx_font_italic">input money</span> represents the total invested capital. These variables are updated each time the grid is reset.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="S3.SS2">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.2 </span>Backtesting Results</h3>
+<div class="ltx_para" id="S3.SS2.p1">
+<p class="ltx_p">We used <span class="ltx_text ltx_font_italic">Python</span> to construct the entire backtesting framework. <span class="ltx_text ltx_font_italic">Figure 3 and 4</span> illustrate the performance of the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> in terms of <span class="ltx_text ltx_font_italic">annualized return (IRR)</span> across various parameter combinations for two major cryptocurrencies, <span class="ltx_text ltx_font_italic">BTC</span> and <span class="ltx_text ltx_font_italic">ETH</span>, over the backtesting period from <span class="ltx_text ltx_font_italic">January 2021 to July 2024</span>.</p>
+</div>
+<div class="ltx_para" id="S3.SS2.p2">
+<p class="ltx_p">The <span class="ltx_text ltx_font_bold ltx_font_italic">grid size</span> represents the ratio of each step in the geometric grid, while <span class="ltx_text ltx_font_bold ltx_font_italic">grid numbers half</span> refers to the number of grids established above and below the central price when the grid is activated.</p>
+</div>
+<div class="ltx_para" id="S3.SS2.p3">
+<p class="ltx_p">From <span class="ltx_text ltx_font_italic">Figure 3 and 4</span>, we can derive the following conclusions: First, the <span class="ltx_text ltx_font_italic">IRR</span> of our strategy remains consistently positive throughout the backtesting period, reaching as high as 60-70%. This strong performance is largely due to the significant rise in cryptocurrency prices in recent years, which is highly favorable for spot grid trading. Moreover, <span class="ltx_text ltx_font_italic">ETH</span> demonstrates a higher <span class="ltx_text ltx_font_italic">IRR</span> than <span class="ltx_text ltx_font_italic">BTC</span>, likely because <span class="ltx_text ltx_font_italic">ETH</span>’s smaller market volume leads to greater price volatility, which benefits grid trading. Finally, a small <span class="ltx_text ltx_font_italic">grid size</span> results in lower profits due to the high proportion of transaction fees within the arbitrage profit. Conversely, a large <span class="ltx_text ltx_font_italic">grid size</span> and <span class="ltx_text ltx_font_italic">grid numbers half</span> lead to poor <span class="ltx_text ltx_font_italic">IRR</span> performance, as the infrequent activation of the grid results in lower cryptocurrency holdings. Therefore, optimizing the balance between grid size and grid numbers half is crucial for maximizing profits while minimizing costs and maintaining an active trading frequency.</p>
+</div>
+<figure class="ltx_figure" id="S3.F3"><img alt="Refer to caption" class="ltx_graphics ltx_img_landscape" height="449" id="S3.F3.g1" src="irrbtc.png" width="598"/>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 3: </span>DGT strategy performance of <span class="ltx_text ltx_font_italic">BTC</span></figcaption>
+</figure>
+<figure class="ltx_figure" id="S3.F4"><img alt="Refer to caption" class="ltx_graphics ltx_img_landscape" height="449" id="S3.F4.g1" src="DGTBTC.png" width="598"/>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 4: </span><span class="ltx_text ltx_font_italic">DGT strategy</span> performance compared with <span class="ltx_text ltx_font_italic">buy-and-hold</span> on BTC</figcaption>
+</figure>
+<figure class="ltx_figure" id="S3.F5"><img alt="Refer to caption" class="ltx_graphics ltx_img_landscape" height="449" id="S3.F5.g1" src="irreth.png" width="598"/>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 5: </span>DGT strategy performance of <span class="ltx_text ltx_font_italic">ETH</span></figcaption>
+</figure>
+<figure class="ltx_figure" id="S3.F6"><img alt="Refer to caption" class="ltx_graphics ltx_img_landscape" height="449" id="S3.F6.g1" src="DGTETH.png" width="598"/>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 6: </span><span class="ltx_text ltx_font_italic">DGT strategy</span> performance compared with <span class="ltx_text ltx_font_italic">buy-and-hold</span> on ETH</figcaption>
+</figure>
+</section>
+</section>
+<section class="ltx_section" id="S4">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Discussion</h2>
+<figure class="ltx_figure" id="S4.F7">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1"><img alt="Refer to caption" class="ltx_graphics ltx_figure_panel ltx_img_landscape" height="202" id="S4.F7.g1" src="gridbtc.png" width="269"/></div>
+<div class="ltx_flex_break"></div>
+<div class="ltx_flex_cell ltx_flex_size_1"><img alt="Refer to caption" class="ltx_graphics ltx_figure_panel ltx_img_landscape" height="202" id="S4.F7.g2" src="gridETH.png" width="269"/></div>
+</div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 7: </span><span class="ltx_text ltx_font_italic">Traditional grid trading strategy</span> on BTC &amp; ETH</figcaption>
+</figure>
+<div class="ltx_para" id="S4.p1">
+<p class="ltx_p">Next, we discuss the performance of the <span class="ltx_text ltx_font_italic">DGT strategy</span> compared to both the <span class="ltx_text ltx_font_italic">buy-and-hold strategy</span> and the <span class="ltx_text ltx_font_italic">traditional grid trading strategy</span>.</p>
+</div>
+<section class="ltx_subsection" id="S4.SS1">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.1 </span>Comparison with <span class="ltx_text ltx_font_italic">Buy-and-Hold</span>
+</h3>
+<div class="ltx_para" id="S4.SS1.p1">
+<p class="ltx_p">We evaluated two key metrics: <span class="ltx_text ltx_font_italic">IRR (Internal Rate of Return)</span> and <span class="ltx_text ltx_font_italic">MDD (Maximum Drawdown)</span>. By testing how different <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> parameters affect these metrics and comparing the results to the <span class="ltx_text ltx_font_italic">buy-and-hold strategy</span>, <span class="ltx_text ltx_font_italic">figure 5 and 6</span> present the outcomes of this comparison.</p>
+</div>
+<div class="ltx_para" id="S4.SS1.p2">
+<p class="ltx_p">For <span class="ltx_text ltx_font_italic">BTC</span>, we observe that the <span class="ltx_text ltx_font_italic">IRR</span> of the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy is higher than that of the <span class="ltx_text ltx_font_italic">buy-and-hold strategy</span>, while the <span class="ltx_text ltx_font_italic">MDD</span> is significantly lower. This shows that the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy not only outperforms the <span class="ltx_text ltx_font_italic">buy-and-hold strategy</span> in terms of returns but also manages risk more effectively. Even during market downturns, the strategy ensures relative stability of assets.</p>
+</div>
+<div class="ltx_para" id="S4.SS1.p3">
+<p class="ltx_p">In the case of <span class="ltx_text ltx_font_italic">ETH</span>, although the <span class="ltx_text ltx_font_italic">IRR</span> of the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy is not substantially higher than that of the <span class="ltx_text ltx_font_italic">buy-and-hold strategy</span>—likely due to <span class="ltx_text ltx_font_italic">ETH</span>’s stronger upward trend during the backtesting period—the <span class="ltx_text ltx_font_italic">MDD</span> is still much better controlled. When the market experienced a maximum decline of around 80%, the <span class="ltx_text ltx_font_italic">DGT strategy</span> limited the drawdown to approximately 50%.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="S4.SS2">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.2 </span>Comparison with <span class="ltx_text ltx_font_italic">Grid Trading Strategy</span>
+</h3>
+<div class="ltx_para" id="S4.SS2.p1">
+<p class="ltx_p">We also compare our <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy with the traditional grid trading strategy, demonstrating how the adjustments we made improve overall performance. <span class="ltx_text ltx_font_italic">Figure 7</span> shows the <span class="ltx_text ltx_font_italic">IRR</span> for a grid strategy where the upper and lower limits perfectly contain the cryptocurrency price from <span class="ltx_text ltx_font_italic">2021 to July 2024</span>. For <span class="ltx_text ltx_font_italic">BTC</span>, the upper limit is <math alttext="80,000" class="ltx_Math" display="inline" id="S4.SS2.p1.m1" intent=":literal"><semantics><mrow><mn>80</mn><mo>,</mo><mn>000</mn></mrow><annotation encoding="application/x-tex">80,000</annotation></semantics></math>, and the lower limit is <math alttext="10,000" class="ltx_Math" display="inline" id="S4.SS2.p1.m2" intent=":literal"><semantics><mrow><mn>10</mn><mo>,</mo><mn>000</mn></mrow><annotation encoding="application/x-tex">10,000</annotation></semantics></math>. For <span class="ltx_text ltx_font_italic">ETH</span>, the upper limit is <math alttext="5,000" class="ltx_Math" display="inline" id="S4.SS2.p1.m3" intent=":literal"><semantics><mrow><mn>5</mn><mo>,</mo><mn>000</mn></mrow><annotation encoding="application/x-tex">5,000</annotation></semantics></math>, and the lower limit is <math alttext="500" class="ltx_Math" display="inline" id="S4.SS2.p1.m4" intent=":literal"><semantics><mn>500</mn><annotation encoding="application/x-tex">500</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para" id="S4.SS2.p2">
+<p class="ltx_p">Several conclusions can be drawn from <span class="ltx_text ltx_font_italic">Figure 7</span>. First, transaction fees significantly impact the overall trading results. Without considering fees (represented by the blue line), the <span class="ltx_text ltx_font_italic">IRR</span> fluctuates at a consistent level, aligning with our earlier calculation that the expected value of the grid strategy is zero. Next, after considering fees (represented by the red line), as with the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy results, we observe that a smaller <span class="ltx_text ltx_font_italic">grid size</span> experiences lower volatility but is more susceptible to transaction fees, while a larger <span class="ltx_text ltx_font_italic">grid size</span> exhibits higher volatility due to greater differences in arbitrage levels. Finally, it’s clear that the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy outperforms the <span class="ltx_text ltx_font_italic">traditional grid trading strategy</span>, even when applied to a grid with predefined cryptocurrency price boundaries. This is expected, as the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy allows for the reinvestment of profits and more efficient use of capital. Interestingly, we found that many users employ a strategy known as the <span class="ltx_text ltx_font_italic">"sky and land"</span> grid strategy on exchanges, which is similar to the <span class="ltx_text ltx_font_italic">traditional grid trading strategy</span> discussed here.</p>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S5">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5 </span>Conclusions and Future Work</h2>
+<div class="ltx_para" id="S5.p1">
+<p class="ltx_p">Grid trading has become a widely used trading technique in recent years. However, our research reveals that without any insight into market trends, the expected value of grid trading is effectively zero. This means that investors face a high risk of losing money after taking transaction fees into consideration. To address this, we developed a modified version of the grid trading strategy, known as the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy. While it may seem like a blend of the <span class="ltx_text ltx_font_italic">buy-and-hold strategy</span> and the <span class="ltx_text ltx_font_italic">traditional grid trading strategy</span>, the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy has significantly outperformed both from <span class="ltx_text ltx_font_italic">2021 to July 2024</span>. We hope that our research provides valuable insights for those considering grid trading strategies in the cryptocurrency market.</p>
+</div>
+<div class="ltx_para" id="S5.p2">
+<p class="ltx_p">In this paper, we demonstrated through backtesting that the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy outperforms both the buy and hold strategy and the grid trading strategy. In the future, we will attempt to use mathematical theory to derive the probability of profit and the expected returns of the <span class="ltx_text ltx_font_bold ltx_font_italic">DGT</span> strategy.</p>
+</div>
+</section>
+<section class="ltx_section" id="Sx1">
+<h2 class="ltx_title ltx_title_section">Acknowledgments</h2>
+<div class="ltx_para" id="Sx1.p1">
+<p class="ltx_p">We would like to extend our heartfelt gratitude to <span class="ltx_text ltx_font_italic">Yu-Chen Hung</span> from the <span class="ltx_text ltx_font_italic">Department of Economics at National Taiwan University (NTU)</span> and <span class="ltx_text ltx_font_italic">Po-Chung Hsieh</span> from the <span class="ltx_text ltx_font_italic">Department of Electrical Engineering at NTU </span>for their valuable insights and thoughtful discussions. Their contributions have been a great source of inspiration and have significantly influenced the successful outcomes of our research.</p>
+</div>
+</section>
+<section class="ltx_bibliography" id="bib">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+<ul class="ltx_biblist">
+<li class="ltx_bibitem" id="bib.bib1">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Francesco Rundo and Battiato (2019)</span>
+<span class="ltx_bibblock">
+Agatino Luigi di Stallo Francesco Rundo, Francesca Trenta and Sebastiano Battiato. 2019.
+
+</span>
+<span class="ltx_bibblock">Grid trading system robot (gtsbot): A novel mathematical algorithm for trading fx market.
+
+</span>
+<span class="ltx_bibblock"><em class="ltx_emph ltx_font_italic">Applied Sciences</em>, 9(9):1796.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib2">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Jia (2022)</span>
+<span class="ltx_bibblock">
+Ruixin Jia. 2022.
+
+</span>
+<span class="ltx_bibblock"><a class="ltx_ref ltx_href" href="https://doi.org/10.4108/eai.18-11-2022.2327164" title="">The feasibility of grid trading approach for bitcoin based on backtesting</a>.
+
+</span>
+<span class="ltx_bibblock">In <em class="ltx_emph ltx_font_italic">Proceedings of the 4th International Conference on Economic Management and Model Engineering, ICEMME 2022, November 18-20, 2022, Nanjing, China</em>.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib3">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Kamrat et al. (2018)</span>
+<span class="ltx_bibblock">
+Sirapop Kamrat, Napasorn Suesangiamsakul, and Rangsipan Marukatat. 2018.
+
+</span>
+<span class="ltx_bibblock">Technical analysis for cryptocurrency trading on mobile phones.
+
+</span>
+<span class="ltx_bibblock">In <em class="ltx_emph ltx_font_italic">The 2018 Technology Innovation Management and Engineering Science International Conference (TIMES-iCON2018)</em>, pages 1–4.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib4">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Xu et al. (2019)</span>
+<span class="ltx_bibblock">
+Jia Xu, Kun Hu, Guang Yang, Jian Zhang, and Jianxing Ye. 2019.
+
+</span>
+<span class="ltx_bibblock">Using machine learning for cryptocurrency trading.
+
+</span>
+<span class="ltx_bibblock">In <em class="ltx_emph ltx_font_italic">2019 IEEE International Conference on Industrial Cyber Physical Systems (ICPS)</em>, pages 647–652.
+
+</span>
+</li>
+</ul>
+</section>
+<section class="ltx_appendix" id="A1">
+<h2 class="ltx_title ltx_title_appendix">
+<span class="ltx_tag ltx_tag_appendix">Appendix A </span>Code Availability</h2>
+<div class="ltx_para" id="A1.p1">
+<p class="ltx_p">The code used in this paper is available on GitHub at the following link: <a class="ltx_ref ltx_href" href="https://github.com/colachenkc/Dynamic-Grid-Trading" title="">Source codes</a>.</p>
+</div>
+<div class="ltx_para" id="A1.p2">
+<p class="ltx_p"></p>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Wed Dec  3 12:29:26 2025 by <a class="ltx_LaTeXML_logo" href="http://dlmf.nist.gov/LaTeXML/"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img alt="Mascot Sammy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="/></a>
+</div></footer>
+</div>
+</body>
+</html>
