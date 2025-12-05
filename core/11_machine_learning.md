@@ -49,19 +49,7 @@ $$Error = Bias^2 + Variance + Noise$$
 
 **图示**：
 
-```
-预测误差
-    ^
-    |  \                 /
-    |   \   总误差     /
-    |    \           /
-    |     \  ___   /
-    |      \/   \/
-    |     方差
-    |    偏差
-    +-------------------------> 模型复杂度
-       简单              复杂
-```
+![Bias-Variance Tradeoff](../assets/charts/bias_variance_tradeoff.png)
 
 **实际含义**：
 - 简单模型（如线性回归）：高偏差，低方差——可能错过复杂规律，但至少稳定
@@ -77,18 +65,7 @@ $$Error = Bias^2 + Variance + Noise$$
 
 **例子1：动量与波动率的交互**
 
-```
-收益率
-    ^
-    |      高波动率
-    |     /--------\
-    |    /          \
-    |   /            \
-    +--/------+-------\---> 动量强度
-    |        ATM
-    | 低波动率
-    | ________________
-```
+![Momentum vs Volatility](../assets/charts/momentum_volatility_interaction.png)
 
 - 低波动率环境：动量效应弱
 - 高波动率环境：动量效应强，但太极端会反转
@@ -285,18 +262,7 @@ $$Error = Bias^2 + Variance + Noise$$
 
 **典型模式**：
 
-```
-夏普比率
-    ^
-    |   样本内        样本外
-    |    ____
-    |   /    \
-    |  /      \_______
-    | /
-    |/
-    +-------------------------> 时间
-         训练期      实盘期
-```
+![Sharpe Ratio Decay](../assets/charts/sharpe_decay.png)
 
 **衰减原因**：
 

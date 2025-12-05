@@ -50,7 +50,9 @@
 
 ### 1. 什么是统计套利？
 
-**统计套利 (Statistical Arbitrage)** 是利用统计规律在相关资产之间交易的策略。
+![价差均值回归](../assets/charts/pairs_trading_spread.png)
+
+**统计套利 (Statistical Arbitrage, StatArb)** 是一类利用资产价格之间的统计规律进行交易的策略。
 
 **核心思想**：
 

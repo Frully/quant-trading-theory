@@ -7,6 +7,12 @@
 
 ## 核心概念定义
 
+### 什么是有效市场假说？
+
+![随机游走 vs. 可预测趋势](../assets/charts/emh_random_walk.png)
+
+**有效市场假说 (Efficient Market Hypothesis, EMH)** 认为，如果在一个市场中，价格完全反映了所有可获得的信息，那么这个市场就是有效的。
+
 ### 什么是行为金融？
 
 **行为金融 (Behavioral Finance)** 是将心理学引入金融学的研究领域，研究投资者的非理性行为如何影响市场价格。
@@ -52,6 +58,8 @@
 Daniel Kahneman 和 Amos Tversky 在 1979 年发表的**前景理论 (Prospect Theory)** 彻底颠覆了这一假设，Kahneman 因此获得 2002 年诺贝尔经济学奖。
 
 ### 1. 损失厌恶 (Loss Aversion)
+
+![前景理论价值函数](../assets/charts/prospect_theory_value.png)
 
 **核心发现**：损失带来的痛苦约为同等收益带来快乐的 **2-2.5 倍**。
 
@@ -181,6 +189,8 @@ Benartzi & Thaler (1995) 用**短视损失厌恶 (Myopic Loss Aversion)** 解释
 **实证**：George & Hwang (2004) 发现，接近 52 周高点的股票具有显著的预测能力——投资者对好消息反应不足，因为他们锚定在历史高点。
 
 ### 3. 概率扭曲 (Probability Weighting)
+
+![概率加权函数](../assets/charts/probability_weighting.png)
 
 **核心发现**：人们高估小概率事件，低估大概率事件。
 
@@ -340,6 +350,8 @@ Benartzi & Thaler (1995) 用**短视损失厌恶 (Myopic Loss Aversion)** 解释
 ---
 
 ## 三、市场反应模式
+
+![市场对新闻的反应模式](../assets/charts/reaction_modes.png)
 
 认知偏差会导致两种基本的市场反应模式：
 

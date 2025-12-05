@@ -8,6 +8,8 @@
 
 ### 什么是有效市场假说 (EMH)？
 
+![随机游走 vs. 可预测趋势](../assets/charts/emh_random_walk.png)
+
 **有效市场假说 (Efficient Market Hypothesis, EMH)** 是现代金融学的基石之一，由 Eugene Fama 在 1970 年系统性地提出。
 
 **核心主张**：
