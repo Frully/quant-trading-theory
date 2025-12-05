@@ -732,7 +732,7 @@ $$f^* = \frac{p \times b - q}{b}$$
 | 成本基础 | 被套后拉低成本 | 突破后追加仓位 |
 | 风险暴露 | 逆势加仓，风险递增 | 顺势加仓，风险可控 |
 
-> 详细讨论见后续专题文章
+> 详细讨论见 [金字塔加仓策略](02_pyramiding.md)
 
 ---
 
@@ -871,9 +871,8 @@ $$f^* = \frac{p \times b - q}{b}$$
 - [行为金融](../core/02_behavioral_finance.md) — 损失厌恶、赌徒谬误
 
 **相关策略**：
-- 反马丁格尔策略（后续文章）
+- [金字塔加仓策略](02_pyramiding.md) — 顺势加仓（含反马丁格尔）
 - 网格交易策略（后续文章）
-- 金字塔加仓策略（后续文章）
 
 **学术文献**：
 - Zarattini, C. & Aziz, A. (2024). [The Art of Financial Illusion: How to Use Martingale Betting Systems to Fool People](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4678427). SSRN.
