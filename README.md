@@ -118,10 +118,14 @@
 
 ```
 quant-trading-theory/
-├── core/                   # 核心文档
-│   ├── 00-19_*.md          # 入门 + 理论专题
+├── core/                   # 理论基础（学术研究）
+│   ├── 00-20_*.md          # 入门 + 理论专题
 │   ├── foundational_theories.md  # 理论速查手册
 │   └── glossary.md         # 术语表
+├── strategies/             # 策略剖析（机制分析）
+│   └── 01-05_*.md          # 具体策略深度分析
+├── systems/                # 交易系统（可执行蓝图）
+│   └── *.md                # 完整的交易系统设计
 └── CLAUDE.md               # 写作规范
 ```
 
